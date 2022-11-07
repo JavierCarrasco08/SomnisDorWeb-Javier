@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,700;1,400;1,700&display=swap');
+
+
+:root {
+    --font-family:'Gentium Book Plus', serif;
+    --primary-color: rgb(236, 190, 8);
+}
+
+* {
+    font-family: var(--font-family);
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Header */
+
+.hero {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    background-color: rgb(255,255,255);
+}
+
+.hero_logo {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.hero_navbar {
+    margin-top: 10px;
+    margin-right: 50vh;
+}
+
+.hero_navbar a {
+    color: black;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.hero_navbar a:hover {
+    text-decoration: overline;
+    color: rgb(236, 190, 8);
+}
+
+.sep-line_hero {
+    width: 1px;
+    height: 15px;
+    background-color: black;
+}
+
+.hero_idioma .idioma {
+    width: auto;
+    height: 40px;
+    padding: 7px 10px;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+}
+
+
+/* Fin Header */
+
+/* Quienes Somos */
+
+.quienes-somos {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.present_img {
+    border-radius: 100%;
+    margin-left: 15%;
+}
+
+.quienes-somos_article {
+    box-sizing: border-box;
+    padding: 20vh;
+}
+
+.qs_article_title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.quienes-somos_article hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* Fin Quienes Somos */
+
+.servicios {
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(232, 230, 230);
+}
+
+.servicios_title {
+    font-size: 2rem;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.servicios hr {
+    width: 50%;
+    margin-left: 25rem;
+}
+
+.servicios section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.servicios_item {
+    width: 45vh;
+    height: 30vh;
+    background-color: rgba(37, 37, 37, 0.196);
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.item_info {
+    margin-top: 170px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    width: auto;
+    height: auto;
+    background-color: black;
+}
+
+.servicios_message {
+    margin-left: 15px;
+    margin-top: 150px;
+    left: 2px;
+    bottom: 2px;
+    font-size: 12px;
+}
+
+.valores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 100vh;
+    margin-top: 5rem;
+    margin-left: 10rem;
+}
+
+.valor-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    width: 25vh;
+    height: 45vh;
+    background-color: black;
+    border-radius: 20px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: rgb(145, 143, 143);
+}
+
+.foo_contacto {
+    display: flex;
+    margin-left: 10rem;
+}
+
+.foo_logo {
+    margin-right: 6rem;
+}
+
+.form-ctc {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 5vh;
+}
+
+.form-ctc input {
+    width: 20rem;
+    height: 2rem;
+    padding-left: 15px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(30, 30, 30);
+    margin-right: 2vh;
+}
+
+#message {
+    margin-top: 5vh;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: none;
+    color: white;
+    background-color: rgb(30, 30, 30);
+} 
+
+footer span {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+
