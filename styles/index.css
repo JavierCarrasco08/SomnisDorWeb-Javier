@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,700;1,400;1,700&display=swap");
+
 html {
   box-sizing: border-box;
 }
+
 :root {
   /* --font-family: "Gentium Book Plus", serif; */
   --font-family: "Raleway", sans-serif;
@@ -141,13 +143,14 @@ body {
 }
 
 .present_img {
-  border-radius: 100%;
+  border-radius: 50%;
+  width: 30rem;
+  height: 27rem;
   /* margin-left: 15%; */
 }
 
 .quienes-somos_article {
   box-sizing: border-box;
-  /* padding: 20vh; */
   width: 50%;
   max-width: 500px;
   min-width: 250px;
@@ -155,7 +158,7 @@ body {
 }
 
 .qs_article_title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -251,11 +254,20 @@ body {
   flex-direction: column;
   text-align: center;
   color: white;
-  width: 25vw;
+  width: 20vw;
   min-width: 250px;
   height: 40vh;
   background-color: black;
   border-radius: 20px;
+  margin-bottom: 5vh;
+}
+
+.valor-card span {
+  position: relative;
+  padding-top: 45vh;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
 }
 
 footer {
@@ -287,6 +299,7 @@ footer {
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
+  margin-left: 2vh;
 }
 .form-ctc .container {
   position: relative;
@@ -319,7 +332,7 @@ footer {
 }
 .form-ctc .container input:focus + label,
 .form-ctc .container input:not(:placeholder-shown) + label {
-  transform: translateY(-1.5vh) translateX(-10px) scale(0.7);
+  transform: translateY(-2vh) translateX(-10px) scale(0.8);
 }
 #message {
   border: none;
@@ -328,7 +341,7 @@ footer {
   height: 6rem;
   /* margin-top: 5vh; */
   border-radius: 5px;
-  padding-left: 1.5rem;
+  padding-left: .5rem;
   border: none;
   color: white;
   background-color: rgb(30, 30, 30);
@@ -415,6 +428,12 @@ footer span {
     display: flex;
     position: relative;
     z-index: 100;
+  }
+  .present_img {
+    border-radius: 50%;
+    width: 17rem;
+    height: 17rem;
+    /* margin-left: 15%; */
   }
 }
 .translate {
