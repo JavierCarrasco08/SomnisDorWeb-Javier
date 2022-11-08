@@ -1,128 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="shortcut icon" src="/images/logo.png" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/index.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Somnis D'or Web</title>
-</head>
-<body>
-   <!-- Header -->
- <header class="hero">
-  <figure class="hero_logotipo">
-    <img src="/images/logo.png" alt="Logo" class="hero_logo" width="110"/>
-  </figure>
-  <nav class="hero_navbar">
-    <a href="#Quienes" class="enlaces">Quienes somos</a>
-    <a href="#Servicios" class="enlaces">Servicios</a>
-    <a href="#Valores" class="enlaces">Valores</a>
-    <a href="#Contacto" class="enlaces">Contactanos</a>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" src="/images/logo.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+      rel="stylesheet" />
+    <title>Somnis D'or Web</title>
+    <script src="../JavaScript/index.js" type="module" defer></script>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="hero">
+      <figure class="hero_logotipo">
+        <img src="/images/logo.png" alt="Logo" class="hero_logo" width="110" />
+      </figure>
+      <nav class="hero_navbar">
+        <a href="#Quienes" class="enlaces">Quienes somos</a>
+        <a href="#Servicios" class="enlaces">Servicios</a>
+        <a href="#Valores" class="enlaces">Valores</a>
+        <a href="#Contacto" class="enlaces">Contactanos</a>
+      </nav>
 
-  <div class="hero_idioma">
-    <div class="idioma">ES</div>
-  </div>
-</header>
+      <div class="hero_idioma">
+        <div class="idioma">ES</div>
+      </div>
+      <button class="hamburguer">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
 
-<!-- Article of "Quienes-somos" -->
-<article id="Quienes" class="quienes-somos">
-  <figure class="quienes-somos_presentacion">
-    <img
-      src="/images/example.png"
-      alt="Intro-Image"
-      class="present_img" width="300"/>
-  </figure>
-  <article class="quienes-somos_article">
-    <h2 class="qs_article_title">¿Quienes somos?</h2>
-    <hr>
-    <p class="quienes-somos_article_paragrah">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-      veritatis expedita eius obcaecati asperiores, quae nostrum cumque quo
-      nihil doloremque necessitatibus labore quibusdam inventore hic
-      possimus iusto quis accusantium commodi sunt, voluptas eveniet
-      exercitationem delectus? Velit veritatis excepturi hic delectus ipsam
-      eaque aliquid dolores sapiente quam enim obcaecati, aut maxime?
-    </p>
-  </article>
-</article>
-
-<!-- Section of "Servicios" -->
-<article class="servicios" id="Servicios">
-  <h2 class="servicios_title">¿Qué Servicios ofrecemos?</h2>
-  <hr/>
-  <section class="servicios_secciones">
-    <article class="servicios_item">
-      <div class="item_info">Pintacaras</div>
+    <!-- Article of "Quienes-somos" -->
+    <article id="Quienes" class="quienes-somos">
+      <figure class="quienes-somos_presentacion">
+        <img
+          src="/images/example.png"
+          alt="Intro-Image"
+          class="present_img"
+          width="300" />
+      </figure>
+      <article class="quienes-somos_article">
+        <h2 class="qs_article_title">¿Quienes somos?</h2>
+        <hr />
+        <p class="quienes-somos_article_paragrah">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+          veritatis expedita eius obcaecati asperiores, quae nostrum cumque quo
+          nihil doloremque necessitatibus labore quibusdam inventore hic
+          possimus iusto quis accusantium commodi sunt, voluptas eveniet
+          exercitationem delectus? Velit veritatis excepturi hic delectus ipsam
+          eaque aliquid dolores sapiente quam enim obcaecati, aut maxime?
+        </p>
+      </article>
     </article>
-    <article class="servicios_item">
-      <div class="item_info">Pintacaras</div>
-    </article>
-    <article class="servicios_item">
-      <div class="item_info">Pintacaras</div>
-    </article>
-  </section>
-  <p class="servicios_message">
-    *Los servicios del mismo puede variar según la personalización del
-    mismo.
-  </p>
-</article>
 
-<!-- Section of "Valores" -->
-<section class="valores" id="valores">
-  <article class="valor-card">
-    <img src="/images/esfuerzo.png" alt="">
-    <span>Esfuerzo</span>
-  </article>
-  <article class="valor-card">
-    <img src="/images/esfuerzo.png" alt="">
-    <span>Esfuerzo</span>
-  </article>
-  <article class="valor-card">
-    <img src="/images/esfuerzo.png" alt="">
-    <span>Esfuerzo</span>
-  </article>
-  <article class="valor-card">
-    <img src="/images/esfuerzo.png" alt="">
-    <span>Esfuerzo</span>
-  </article>
-  <article class="valor-card">
-    <img src="/images/esfuerzo.png" alt="">
-    <span>Esfuerzo</span>
-  </article>
-  <article class="valor-card">
-    <img src="/images/esfuerzo.png" alt="">
-    <span>Esfuerzo</span>
-  </article>
-</section>
+    <!-- Section of "Servicios" -->
+    <article class="servicios" id="Servicios">
+      <h2 class="servicios_title">¿Qué Servicios ofrecemos?</h2>
+      <hr />
+      <section class="servicios_secciones">
+        <article class="servicios_item">
+          <div class="item_info">Pintacaras</div>
+        </article>
+        <article class="servicios_item">
+          <div class="item_info">Pintacaras</div>
+        </article>
+        <article class="servicios_item">
+          <div class="item_info">Pintacaras</div>
+        </article>
+      </section>
+      <p class="servicios_message">
+        *Los servicios del mismo puede variar según la personalización del
+        mismo.
+      </p>
+    </article>
 
-<!-- Contact in the footer -->
-<footer class="foo" id="Contacto">
-  <section class="foo_contacto">
-    <figure class="foo_logo">
-      <img src="/images/logo.png" alt="" class="foo_contacto_logotipo_logo" width="150"/>
-    </figure>
-    <form action="" class="form-ctc">
-      <label for="name"></label>
-      <input type="text" autocomplete="off" name="nombre" id="name" placeholder="nombre" />
-      <label for="email"></label>
-      <input
-        type="email"
-        name="email"
-        autocomplete="off"
-        id="email"
-        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" placeholder="e-mail"/>
-    </form>
-    <textarea
-        name="message"
-        id="message"
-        cols="30"
-        rows="10"
-        placeholder="Descripción"></textarea>
-  </section>
-  <span>&copy;Todos los derechos reservados</span>
-</footer>
-</body>
+    <!-- Section of "Valores" -->
+    <section class="valores" id="Valores">
+      <article class="valor-card">
+        <img src="/images/esfuerzo.png" alt="" />
+        <span>Esfuerzo</span>
+      </article>
+      <article class="valor-card">
+        <img src="/images/esfuerzo.png" alt="" />
+        <span>Esfuerzo</span>
+      </article>
+      <article class="valor-card">
+        <img src="/images/esfuerzo.png" alt="" />
+        <span>Esfuerzo</span>
+      </article>
+      <article class="valor-card">
+        <img src="/images/esfuerzo.png" alt="" />
+        <span>Esfuerzo</span>
+      </article>
+      <article class="valor-card">
+        <img src="/images/esfuerzo.png" alt="" />
+        <span>Esfuerzo</span>
+      </article>
+      <article class="valor-card">
+        <img src="/images/esfuerzo.png" alt="" />
+        <span>Esfuerzo</span>
+      </article>
+    </section>
+
+    <!-- Contact in the footer -->
+    <footer class="foo" id="Contacto">
+      <section class="foo_contacto">
+        <figure class="foo_logo">
+          <img
+            src="/images/logo.png"
+            alt="Logotipo"
+            class="foo_contacto_logotipo_logo"
+            width="150" />
+        </figure>
+        <form action="" class="form-ctc">
+          <div class="container">
+            <input
+              type="text"
+              autocomplete="off"
+              name="nombre"
+              id="name"
+              placeholder=" "
+              required
+              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" />
+            <label for="name">Nombre</label>
+          </div>
+
+          <div class="container">
+            <input
+              type="email"
+              name="email"
+              autocomplete="off"
+              id="email"
+              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+              placeholder=" "
+              required />
+            <label for="email">Email</label>
+          </div>
+
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Descripción"
+            data-pattern="^.{1,255}$"
+            required></textarea>
+          <input type="submit" value="Send" disabled />
+        </form>
+      </section>
+      <span>&copy;Todos los derechos reservados</span>
+    </footer>
+  </body>
 </html>
