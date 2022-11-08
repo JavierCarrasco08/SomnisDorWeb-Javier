@@ -6,6 +6,8 @@ html {
   /* --font-family: "Gentium Book Plus", serif; */
   --font-family: "Raleway", sans-serif;
   --primary-color: rgb(236, 190, 8);
+  --form-invalid: #db5749;
+  --valid: #49db57;
 }
 
 * {
@@ -91,7 +93,41 @@ body {
 .hero_idioma .idioma {
   font-weight: 700;
 }
-
+.hamburguer {
+  width: 40px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: none;
+}
+.hamburguer * {
+  width: 80%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #222;
+  opacity: 1;
+  transform: rotate(0);
+  transform-origin: left center;
+  transition: opacity 1s linear, transform 0.5s linear;
+}
+.hamburguer.isActive span:nth-child(1) {
+  transform-origin: left center;
+  transform: rotate(38deg);
+  transition: width 0.5s linear, transform 0.5s linear;
+}
+.hamburguer.isActive span:nth-child(2) {
+  opacity: 0;
+  transition: opacity 0.5s linear, transform 0.5s linear;
+}
+.hamburguer.isActive span:nth-child(3) {
+  transform-origin: left center;
+  transform: rotate(-38deg);
+  transition: width 0.5s linear, transform 0.5s linear;
+}
 /* Fin Header */
 
 /* Quienes Somos */
@@ -101,16 +137,21 @@ body {
   width: 100%;
   height: 100vh;
   align-items: center;
+  justify-content: space-around;
 }
 
 .present_img {
   border-radius: 100%;
-  margin-left: 15%;
+  /* margin-left: 15%; */
 }
 
 .quienes-somos_article {
   box-sizing: border-box;
-  padding: 20vh;
+  /* padding: 20vh; */
+  width: 50%;
+  max-width: 500px;
+  min-width: 250px;
+  text-align: center;
 }
 
 .qs_article_title {
@@ -188,16 +229,19 @@ body {
   left: 2px;
   bottom: 2px;
   font-size: 16px;
+  text-align: center;
 }
 
 .valores {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-content: center;
+  place-items: center;
   gap: 2rem;
-  width: 80%;
-  height: 100vh;
-  margin: 0 auto;
+  width: 95%;
+  /* height: 100vh; */
+  height: auto;
+  margin: 3rem auto;
   /* margin-top: 5rem; */
   /* margin-left: 10rem; */
 }
@@ -208,6 +252,7 @@ body {
   text-align: center;
   color: white;
   width: 25vw;
+  min-width: 250px;
   height: 40vh;
   background-color: black;
   border-radius: 20px;
@@ -232,9 +277,9 @@ footer {
   gap: 0.5rem;
 }
 
-.foo_logo {
+/* .foo_logo {
   margin-right: 6rem;
-}
+} */
 
 .form-ctc {
   display: flex;
@@ -266,7 +311,7 @@ footer {
   width: 70px;
   z-index: 5;
   top: 0;
-  left: 1.25vw;
+  left: 5%;
   transform: translateY(0.5vh);
   font-size: 14px;
   color: white;
@@ -283,7 +328,7 @@ footer {
   height: 6rem;
   /* margin-top: 5vh; */
   border-radius: 5px;
-  padding-left: 15px;
+  padding-left: 1.5rem;
   border: none;
   color: white;
   background-color: rgb(30, 30, 30);
@@ -300,8 +345,83 @@ input[type="submit"] {
   outline: none;
   cursor: pointer;
 }
+input[type="submit"]:disabled {
+  opacity: 0.5;
+}
+.form-ctc .container input:invalid {
+  border: thin solid var(--form-invalid);
+}
+.form-ctc .container input:valid {
+  border: thin solid var(--valid);
+}
 footer span {
   margin-top: 15px;
   text-align: center;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 505px) {
+  .hero_idioma {
+    display: none;
+  }
+}
+@media screen and (max-width: 630px) {
+  .foo_contacto {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 860px) {
+  .quienes-somos {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .hero {
+    justify-content: space-between;
+    padding: 0 0.1rem;
+  }
+  .hero_idioma {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 30px;
+    right: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(300px);
+    transition: transform 0.5s linear;
+  }
+  .hero_navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    gap: 2rem;
+    transition: transform 0.5s linear;
+  }
+  .hamburguer {
+    display: flex;
+    position: relative;
+    z-index: 100;
+  }
+}
+.translate {
+  transform: translateX(0);
+  transition: transform 0.5s linear;
+}
+.translateES {
+  transform: translateX(0);
+  transition: transform 0.5s linear;
 }

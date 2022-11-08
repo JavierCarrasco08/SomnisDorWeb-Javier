@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
       rel="stylesheet" />
     <title>Somnis D'or Web</title>
+    <script src="../JavaScript/index.js" type="module" defer></script>
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
   </head>
   <body>
@@ -35,6 +36,9 @@
       <div class="hero_idioma">
         <div class="idioma">ES</div>
       </div>
+      <button class="hamburguer">
+        <span></span><span></span><span></span>
+      </button>
     </header>
 
     <!-- Article of "Quienes-somos" -->
@@ -126,7 +130,9 @@
               autocomplete="off"
               name="nombre"
               id="name"
-              placeholder=" " />
+              placeholder=" "
+              required
+              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" />
             <label for="name">Nombre</label>
           </div>
 
@@ -137,7 +143,8 @@
               autocomplete="off"
               id="email"
               pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-              placeholder=" " />
+              placeholder=" "
+              required />
             <label for="email">Email</label>
           </div>
 
@@ -146,9 +153,10 @@
             id="message"
             cols="30"
             rows="10"
-            placeholder="Descripción">
-          </textarea>
-          <input type="submit" value="Send" />
+            placeholder="Descripción"
+            data-pattern="^.{1,255}$"
+            required></textarea>
+          <input type="submit" value="Send" disabled />
         </form>
       </section>
       <span>&copy;Todos los derechos reservados</span>
