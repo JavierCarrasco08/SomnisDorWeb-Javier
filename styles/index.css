@@ -444,3 +444,60 @@ footer span {
   transform: translateX(0);
   transition: transform 0.5s linear;
 }
+
+.cookies {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  background-color: #222;
+  align-items: center;
+  opacity: 0;
+}
+
+.cookies.active {
+  display: flex;
+  opacity: 1;
+}
+
+.cookies img {
+  margin-left: 4.5vh;
+  width: 130px;
+  height: 125px;
+}
+
+#content_cokies {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 5vh 15vh;
+}
+
+.cookies_title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: white;
+}
+
+.cookies_content {
+  color: white;
+}
+
+
+.accept_cookies {
+  width: 15rem;
+  height: 3rem;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  margin-right: 4.5vh;
+  opacity: .3;
+}
+
+.accept_cookies:hover {
+  content: '';
+  opacity: 1;
+}
+
+
