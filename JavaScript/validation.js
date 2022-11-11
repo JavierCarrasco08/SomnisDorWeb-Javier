@@ -12,4 +12,10 @@ export function validation() {
       }
     }
   });
+
+  document.addEventListener("submit", (e) => {
+    if (e.target.matches(".form-ctc")) {
+      e.preventDefault();
+    }
+  });
 }

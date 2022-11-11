@@ -73,12 +73,30 @@
       <hr />
       <section class="servicios_secciones">
         <article class="servicios_item">
+          <figure class="servicios_secciones_port">
+            <img
+              src="../images/PHOTO-2022-10-23-16-21-41.jpg"
+              alt="Disfrazes"
+              class="port_img" />
+          </figure>
           <div class="item_info">Disfrazes</div>
         </article>
         <article class="servicios_item">
-          <div class="item_info">Gimcanas</div>
+          <figure class="servicios_secciones_port">
+            <img
+              src="../images/PHOTO-2022-11-10-12-46-22.jpg"
+              alt="Disfrazes"
+              class="port_img" />
+          </figure>
+          <div class="item_info">Gincanas</div>
         </article>
         <article class="servicios_item">
+          <figure class="servicios_secciones_port">
+            <img
+              src="../images/PHOTO-2022-11-10-12-46-23.jpg"
+              alt="Disfrazes"
+              class="port_img" />
+          </figure>
           <div class="item_info">Diversas actividades</div>
         </article>
       </section>
@@ -91,27 +109,27 @@
     <!-- Section of "Valores" -->
     <section class="valores" id="Valores">
       <article class="valor-card">
-        <img src="/images/esfuerzo.png" alt="" />
-        <span>Esfuerzo</span>
+        <img src="/images/esfuerzo.png" alt="Amor" />
+        <span>Amor</span>
       </article>
       <article class="valor-card">
-        <img src="/images/esfuerzo.png" alt="" />
-        <span>Esfuerzo</span>
+        <img src="/images/esfuerzo.png" alt="Disciplina" />
+        <span>Disciplina</span>
       </article>
       <article class="valor-card">
-        <img src="/images/esfuerzo.png" alt="" />
-        <span>Esfuerzo</span>
+        <img src="/images/esfuerzo.png" alt="Compañerismo" />
+        <span>Compañerismo</span>
       </article>
       <article class="valor-card">
-        <img src="/images/esfuerzo.png" alt="" />
-        <span>Esfuerzo</span>
+        <img src="/images/esfuerzo.png" alt="Respeto" />
+        <span>Respeto</span>
       </article>
       <article class="valor-card">
-        <img src="/images/esfuerzo.png" alt="" />
-        <span>Esfuerzo</span>
+        <img src="/images/esfuerzo.png" alt="Contancia" />
+        <span>Contancia</span>
       </article>
       <article class="valor-card">
-        <img src="/images/esfuerzo.png" alt="" />
+        <img src="/images/esfuerzo.png" alt="Esfuerzo" />
         <span>Esfuerzo</span>
       </article>
     </section>
@@ -150,15 +168,17 @@
               required />
             <label for="email">Email</label>
           </div>
-
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Descripcion"
-            data-pattern="^.{1,255}$"
-            required></textarea>
+          <div class="container">
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder=" "
+              data-pattern="^.{1,255}$"
+              required></textarea>
+            <label for="message">Description</label>
+          </div>
           <input type="submit" value="Send" disabled />
         </form>
       </section>
