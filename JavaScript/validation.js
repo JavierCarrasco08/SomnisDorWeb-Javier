@@ -1,7 +1,7 @@
 export function validation() {
   const $modal = document.querySelector(".modal");
   console.log($modal);
-  // Aqui ire el correo
+  // Correo electronico al que va enviado
   let correo = "alvarocamposdev@gmail.com";
   document.addEventListener("input", (e) => {
     if (e.target.matches("form [required]")) {
