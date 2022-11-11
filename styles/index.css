@@ -176,7 +176,39 @@ body {
 }
 
 /* Fin Quienes Somos */
-
+/* Modal */
+div.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  place-content: center;
+  background-color: rgb(34 34 34 / 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1200;
+  text-align: center;
+}
+div.modal figure {
+  background-color: var(--color-paragrah-servicios);
+  width: 70vw;
+  height: 45vh;
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+}
+div.modal figure img {
+  width: 10vw;
+  height: auto;
+}
+div.isActive-modal {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out;
+}
+/* Servicios */
 .servicios {
   display: flex;
   flex-direction: column;
