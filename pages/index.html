@@ -18,7 +18,7 @@
       rel="stylesheet" />
     <title>Somnis D'or Web</title>
     <script src="../JavaScript/index.js" type="module" defer></script>
-    
+
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
   </head>
   <body>
@@ -26,7 +26,11 @@
     <header class="hero">
       <figure class="hero_logotipo">
         <a href="#">
-          <img src="/images/logo.png" alt="Logo" class="hero_logo" width="110"/>
+          <img
+            src="/images/logo.png"
+            alt="Logo"
+            class="hero_logo"
+            width="110" />
         </a>
       </figure>
       <nav class="hero_navbar">
@@ -47,10 +51,7 @@
     <!-- Article of "Quienes-somos" -->
     <article id="Quienes" class="quienes-somos">
       <figure class="quienes-somos_presentacion">
-        <img
-          src="/images/example.png"
-          alt="Intro-Image"
-          class="present_img" />
+        <img src="/images/example.png" alt="Intro-Image" class="present_img" />
       </figure>
       <article class="quienes-somos_article">
         <h2 class="qs_article_title">¿Quienes somos?</h2>
@@ -72,12 +73,30 @@
       <hr />
       <section class="servicios_secciones">
         <article class="servicios_item">
+          <figure class="servicios_secciones_port">
+            <img
+              src="../images/PHOTO-2022-10-23-16-21-41.jpg"
+              alt="Disfrazes"
+              class="port_img" />
+          </figure>
           <div class="item_info">Disfrazes</div>
         </article>
         <article class="servicios_item">
-          <div class="item_info">Gimcanas</div>
+          <figure class="servicios_secciones_port">
+            <img
+              src="../images/PHOTO-2022-11-10-12-46-22.jpg"
+              alt="Disfrazes"
+              class="port_img" />
+          </figure>
+          <div class="item_info">Gincanas</div>
         </article>
         <article class="servicios_item">
+          <figure class="servicios_secciones_port">
+            <img
+              src="../images/PHOTO-2022-11-10-12-46-23.jpg"
+              alt="Disfrazes"
+              class="port_img" />
+          </figure>
           <div class="item_info">Diversas actividades</div>
         </article>
       </section>
@@ -90,27 +109,27 @@
     <!-- Section of "Valores" -->
     <section class="valores" id="Valores">
       <article class="valor-card">
-        <img src="/images/esfuerzo.png" alt="" />
-        <span>Esfuerzo</span>
+        <img src="/images/esfuerzo.png" alt="Amor" />
+        <span>Amor</span>
       </article>
       <article class="valor-card">
-        <img src="/images/esfuerzo.png" alt="" />
-        <span>Esfuerzo</span>
+        <img src="/images/esfuerzo.png" alt="Disciplina" />
+        <span>Disciplina</span>
       </article>
       <article class="valor-card">
-        <img src="/images/esfuerzo.png" alt="" />
-        <span>Esfuerzo</span>
+        <img src="/images/esfuerzo.png" alt="Compañerismo" />
+        <span>Compañerismo</span>
       </article>
       <article class="valor-card">
-        <img src="/images/esfuerzo.png" alt="" />
-        <span>Esfuerzo</span>
+        <img src="/images/esfuerzo.png" alt="Respeto" />
+        <span>Respeto</span>
       </article>
       <article class="valor-card">
-        <img src="/images/esfuerzo.png" alt="" />
-        <span>Esfuerzo</span>
+        <img src="/images/esfuerzo.png" alt="Contancia" />
+        <span>Contancia</span>
       </article>
       <article class="valor-card">
-        <img src="/images/esfuerzo.png" alt="" />
+        <img src="/images/esfuerzo.png" alt="Esfuerzo" />
         <span>Esfuerzo</span>
       </article>
     </section>
@@ -149,26 +168,38 @@
               required />
             <label for="email">Email</label>
           </div>
-
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Descripción"
-            data-pattern="^.{1,255}$"
-            required></textarea>
+          <div class="container">
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder=" "
+              data-pattern="^.{1,255}$"
+              required></textarea>
+            <label for="message">Description</label>
+          </div>
           <input type="submit" value="Send" disabled />
         </form>
       </section>
       <span>&copy;Todos los derechos reservados</span>
     </footer>
-
+    <div class="modal">
+      <figure>
+        <img src="../assets/leader.svg" alt="Loader" />
+      </figure>
+    </div>
     <div class="cookies">
-      <img src="/images/logo.png" alt="Somnis D'or Web">
+      <img src="/images/logo.png" alt="Somnis D'or Web" />
       <div id="content_cokies">
         <span class="cookies_title">Esta página web utiliza cookies</span>
-      <span class="cookies_content">Somnis D'or Web, S.L. usa cookies propias (necesarias) y de terceros para personalizar el contenido, ofrecer anuncios personalizados, funciones de redes sociales y análisis del tráfico. Más Información. Puedes configurar o rechazar las cookies a través de este cuadro.</span>
+        <span class="cookies_content">
+          Somnis D'or Web, S.L. usa cookies propias (necesarias) y de terceros
+          para personalizar el contenido, ofrecer anuncios personalizados,
+          funciones de redes sociales y análisis del tráfico. Más Información.
+          Puedes configurar o rechazar las cookies a través de este
+          cuadro.</span
+        >
       </div>
       <button class="accept_cookies">OK</button>
     </div>
