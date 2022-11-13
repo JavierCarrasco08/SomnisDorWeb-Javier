@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,700;1,400;1,700&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,700;1,400;1,700&display=swap");
 
 html {
   box-sizing: border-box;
@@ -124,40 +124,72 @@ body {
 
 .quienes-somos {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: auto;
   align-items: center;
   justify-content: space-around;
 }
 
-.present_img {
-  border-radius: 50%;
-  width: 30rem;
-  height: 27rem;
-  /* margin-left: 15%; */
-}
-
-.present_img:hover {
-  transform: scale(1.1);
-  border: 3px solid rgba(0, 0, 0, 0.781);
-}
-
-.quienes-somos_article {
+.quienes-somos_title {
   box-sizing: border-box;
-  width: 50%;
-  max-width: 500px;
-  min-width: 250px;
+width: 50rem;
   text-align: center;
 }
 
-.qs_article_title {
+.qs__title {
   font-size: 2.5rem;
   text-align: center;
 }
 
-.quienes-somos_article hr {
+.quienes-somos_title hr {
   margin-top: 15px;
-  margin-bottom: 15px;
+}
+
+.qs_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5em;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.a_content {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0vh 45vh;
+  margin-bottom: 10px;
+}
+
+.a-item {
+  box-sizing: border-box;
+  padding: 0vh 20vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.qs-item {
+  display: flex;
+  flex-direction: column-reverse;
+  box-sizing: border-box;
+  padding: 0vh 20vh;
+  text-align: center;
+}
+
+.qs {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.qs_img {
+  margin-top: 20px;
+  width: 185px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.qs-te_img {
+  margin-bottom: 100px;
 }
 
 /* Fin Quienes Somos */

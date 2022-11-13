@@ -2,7 +2,7 @@ export function validation() {
   const $modal = document.querySelector(".modal");
   console.log($modal);
   // Correo electronico al que va enviado
-  let correo = "alvarocamposdev@gmail.com";
+  let correo = "somnisdorevents@gmail.com";
   document.addEventListener("input", (e) => {
     if (e.target.matches("form [required]")) {
       let $input = e.target,
@@ -29,7 +29,7 @@ export function validation() {
         body: JSON.stringify({
           Name: e.target.nombre.value,
           Email: e.target.email.value,
-          Message: e.target.message.value,
+          Mensaje: e.target.message.value,
         }),
       })
         .then((res) => (res.ok ? res.json() : Promise.reject(res)))
@@ -49,7 +49,7 @@ export function validation() {
           $modal.innerHTML = `<h2>${err.message}</h2>`;
           setTimeout(() => {
             $modal.classList.remove("isActive-modal");
-          }, 2000);
+          }, 1000);
           $modal.innerHTML = `
           <figure>
           <img src="../assets/leader.svg" alt="Loader...">
