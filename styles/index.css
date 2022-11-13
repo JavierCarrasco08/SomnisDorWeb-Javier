@@ -1,4 +1,4 @@
- @import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,700;1,400;1,700&display=swap");
 
 html {
   box-sizing: border-box;
@@ -47,7 +47,6 @@ body {
   /* padding: 0.5rem 0; */
 }
 
-
 .hero_navbar a {
   position: relative;
   display: inline-block;
@@ -82,7 +81,6 @@ body {
   background-color: black;
 }
 
-
 .hamburguer {
   width: 40px;
   height: 25px;
@@ -93,6 +91,10 @@ body {
   border: none;
   outline: none;
   display: none;
+  transition: opacity 0.5 linear;
+}
+.hamburguer:hover {
+  opacity: 0.5;
 }
 .hamburguer * {
   width: 80%;
@@ -133,37 +135,43 @@ body {
 
 .quienes-somos_title {
   box-sizing: border-box;
-width: 50rem;
+  /* width: 50rem; */
   text-align: center;
 }
-
+.quienes-somos_title hr {
+  width: 80vw;
+}
 .qs__title {
   font-size: 2.5rem;
   text-align: center;
 }
-
 .quienes-somos_title hr {
   margin-top: 15px;
 }
 
 .qs_content {
+  /* background-color: #0d3b66; */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5em;
-  margin-bottom: 30px;
-  margin-top: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 80%;
+  max-width: 900px;
+  gap: 5rem;
+  /* margin-bottom: 30px; */
+  /* margin-top: 15px; */
 }
 
 .a_content {
   text-align: center;
   box-sizing: border-box;
-  padding: 0vh 45vh;
-  margin-bottom: 10px;
+  width: 40vw;
+  min-width: 300px;
+  /* padding: 0vh 45vh; */
+  /* margin-bottom: 10px; */
 }
 
 .a-item {
   box-sizing: border-box;
-  padding: 0vh 20vh;
+  /* padding: 0vh 20vh; */
   display: flex;
   flex-direction: column-reverse;
 }
@@ -172,7 +180,9 @@ width: 50rem;
   display: flex;
   flex-direction: column-reverse;
   box-sizing: border-box;
-  padding: 0vh 20vh;
+  /* padding: 0vh 20vh; */
+  /* width: 100%; */
+  /* max-width: 400px; */
   text-align: center;
 }
 
@@ -182,7 +192,7 @@ width: 50rem;
 }
 
 .qs_img {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   width: 185px;
   height: 180px;
   border-radius: 50%;
@@ -258,8 +268,8 @@ div.isActive-modal {
   align-content: center;
   justify-content: space-around;
   gap: 1rem;
-   margin-top: 25px; 
-   margin-left: 20px; 
+  margin-top: 25px;
+  margin-left: 20px;
 }
 .servicios_item {
   width: 45vw;
@@ -269,14 +279,16 @@ div.isActive-modal {
   /* background-color: rgba(37, 37, 37, 0.196); */
   border-radius: 10px;
   /* margin-top: 1rem; */
+  transition: transform 0.5s ease-in-out;
 }
 
 .servicios_item:hover {
-  transform: scale(1.1);
+  transform: translateY(-10px);
 }
 .servicios_secciones_port {
   width: 90%;
   height: 70%;
+  transition: border 0.5s ease-in-out;
 }
 
 .servicios_secciones_port:hover {
@@ -295,9 +307,9 @@ div.isActive-modal {
   /* margin-top: 170px; */
   text-align: center;
   border-radius: 10px;
-  padding: 5px ;
+  padding: 5px;
   color: var(--color-paragrah-servicios);
-  width: 25rem;
+  width: 90%;
   height: auto;
   background-color: #7156a6a4;
 }
@@ -308,7 +320,8 @@ div.isActive-modal {
   font-size: 1.2rem;
   font-weight: 800;
   text-decoration: none;
-  color: black;
+  color: #222;
+  transition: color 0.25s linear;
 }
 
 .servicios_message {
@@ -339,23 +352,25 @@ div.isActive-modal {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: black;
+  color: #222;
   width: 20vw;
   min-width: 250px;
   height: auto;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
-
+#card {
+  transition: transform 0.5s linear, box-shadow 0.5s ease;
+}
 #card span {
   font-size: 1.5rem;
   margin-bottom: 3vh;
-  color: black;
+  color: #222;
 }
 
 #card:hover {
-    transform: translateY(-4px);
-    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.781);
+  transform: translateY(-4px);
+  box-shadow: 3px 3px 10px rgba(34, 34, 34, 0.581);
 }
 
 footer {
@@ -532,6 +547,8 @@ footer span {
   position: fixed;
   bottom: 0;
   left: 0;
+  width: 100%;
+  z-index: 200;
   height: auto;
   background-color: #222;
   align-items: center;
@@ -569,16 +586,37 @@ footer span {
 }
 
 .accept_cookies {
-  width: 15rem;
+  width: 200px;
   height: 3rem;
   border-radius: 10px;
   background-color: var(--primary-color);
   border: none;
-  margin-right: 4.5vh;
+  margin-right: 4.5vw;
   opacity: 0.3;
+  transition: opacity 0.5s linear;
 }
 
 .accept_cookies:hover {
   content: "";
   opacity: 1;
+}
+@media screen and (max-width: 750px) {
+  .cookies {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .accept_cookies {
+    margin-right: 0px;
+  }
+  .cookies img {
+    margin-left: 0;
+  }
+  #content_cokies {
+    text-align: center;
+    padding: 0;
+    width: 70vw;
+    min-width: 200px;
+  }
 }

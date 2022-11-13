@@ -20,6 +20,7 @@ export function validation() {
     if (e.target.matches(".form-ctc")) {
       e.preventDefault();
       $modal.classList.add("isActive-modal");
+
       fetch(`https://formsubmit.co/ajax/${correo}`, {
         method: "POST",
         headers: {
@@ -34,8 +35,9 @@ export function validation() {
       })
         .then((res) => (res.ok ? res.json() : Promise.reject(res)))
         .then((json) => {
-          $modal.innerHTML = `<h2>${json.message}</h2>`;
           e.target.reset();
+          // $modal.innerHTML = `<h2>${json.message}</h2>`;
+          $modal.innerHTML = `<h2>${json.message}</h2>`;
           setTimeout(() => {
             $modal.classList.remove("isActive-modal");
           }, 2000);
@@ -46,6 +48,7 @@ export function validation() {
         })
         .catch((err) => {
           e.target.reset();
+          console.log(err);
           $modal.innerHTML = `<h2>${err.message}</h2>`;
           setTimeout(() => {
             $modal.classList.remove("isActive-modal");

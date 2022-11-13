@@ -6,7 +6,7 @@ export function navModal() {
     if (e.target.matches(".hamburguer *")) {
       $button.classList.toggle("isActive");
       $nav.classList.toggle("translate");
-      $ES.classList.toggle("translateES");
+      // $ES.classList.toggle("translateES");
     }
   });
 }
